@@ -1,0 +1,31 @@
+# clawclaw/models.yaml
+
+# ==========================
+# 全局应用配置
+# ==========================
+app_settings:
+  active_model: "dashscope"  # 切换全局模型
+
+# ==========================
+# 具体模型参数定义
+# ==========================
+dashscope:
+  provider: "dashscope"
+  model_name: "qwen-plus"
+  api_key_env: "DASHSCOPE_API_KEY"
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  temperature: 0.0
+
+openai:
+  provider: "openai"
+  model_name: "gpt-4o-mini"
+  api_key_env: "OPENAI_API_KEY"
+  base_url: null
+  temperature: 0.0
+
+deepseek:
+  provider: "deepseek"
+  model_name: "deepseek-chat"
+  api_key_env: "DEEPSEEK_API_KEY"
+  base_url: "https://api.deepseek.com/v1"
+  temperature: 0.0
